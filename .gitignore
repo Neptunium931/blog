@@ -2,6 +2,7 @@
 node_modules
 build
 tmp
+bun.lockb
 
 # Secrets
 .env
@@ -20,6 +21,7 @@ yarn-error.log
 .fleet
 .idea
 .vscode
+Session.vim
 
 # Platform specific
 .DS_Store
