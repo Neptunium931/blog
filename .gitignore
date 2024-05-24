@@ -3,6 +3,7 @@ node_modules
 build
 tmp
 bun.lockb
+pnpm-lock.yaml
 
 # Secrets
 .env
