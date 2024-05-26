@@ -8,6 +8,12 @@
   @vite(['resources/css/app.scss', 'resources/js/app.js'])
 </head>
 <body>
-  <h1> It Works! </h1>
+  <a
+    href={{route('login')}}
+    up-layer="new"
+    up-accept-location={{route('home')}}
+    >
+    Login
+  </a>
 </body>
 </html>

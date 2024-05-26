@@ -13,7 +13,7 @@ export default class AuthController {
 
     await auth.use('web').login(user)
 
-    return response.redirect().back()
+    return response.redirect().toRoute('home')
   }
 
   async logout({ auth, response }: HttpContext) {
