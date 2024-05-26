@@ -49,6 +49,7 @@
     "sass": "^1.77.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5",
+    "unpoly": "^3.7.3",
     "vite": "^5.2.11"
   },
   "dependencies": {
@@ -60,7 +61,7 @@
     "@adonisjs/static": "^1.1.1",
     "@adonisjs/vite": "^2.0.2",
     "@vinejs/vine": "^2.0.0",
-    "argon2": "^0.40.1",
+    "argon2": "^0.40.3",
     "better-sqlite3": "^10.0.0",
     "edge.js": "^6.0.2",
     "luxon": "^3.4.4",
