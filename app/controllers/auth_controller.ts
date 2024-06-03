@@ -19,7 +19,7 @@ export default class AuthController {
   async logout({ auth, response }: HttpContext) {
     await auth.use('web').logout()
 
-    return response.redirect().back()
+    return response.redirect().toRoute('home')
   }
 
   showRegisterForm({ view }: HttpContext) {

@@ -8,12 +8,38 @@
   @vite(['resources/css/app.scss', 'resources/js/app.js'])
 </head>
 <body>
+  <main id="the-header">
+    <h1>AdonisJS</h1>
+    {{ auth.user }}
+    @if(auth.isAuthenticated)
+    <p> {{ auth.user.email }} </p>
+    @end
+  </main>
+  <!-- <a -->
+  <!--   href={{route('login')}} -->
+  <!--   up-layer="new" -->
+  <!--   up-accept-location={{route('home')}} -->
+  <!--   up-on-accepted="up.reload('main')" -->
+  <!--   > -->
+  <!--   Login -->
+  <!-- </a> -->
+  <!--   <a -->
+  <!--     href={{route('logout')}} -->
+  <!--     up-layer="new" -->
+  <!--     up-accept-location={{route('home')}} -->
+  <!--     up-on-accepted="up.reload('main')" -->
+  <!--     > -->
+  <!--     Logout -->
+  <!--   </a> -->
   <a
     href={{route('login')}}
-    up-layer="new"
-    up-accept-location={{route('home')}}
     >
     Login
   </a>
+    <a
+      href={{route('logout')}}
+      >
+      Logout
+    </a>
 </body>
 </html>

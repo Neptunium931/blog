@@ -15,8 +15,6 @@ const UsersController = () => import('#controllers/users_controller')
 
 router.on('/').render('pages/home').as('home')
 
-router.get('users', [UsersController, 'list']).as('users')
-
 router
   .group(() => {
     router.get('login', [AuthController, 'showLoginForm'])
@@ -29,5 +27,6 @@ router
 router
   .group(() => {
     router.get('logout', [AuthController, 'logout']).as('logout')
+    router.get('users', [UsersController, 'list']).as('users')
   })
   .middleware(middleware.auth())
