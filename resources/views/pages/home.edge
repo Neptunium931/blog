@@ -10,7 +10,6 @@
 <body>
   <main id="the-header">
     <h1>AdonisJS</h1>
-    {{ auth.user }}
     @if(auth.isAuthenticated)
     <p> {{ auth.user.email }} </p>
     @end
