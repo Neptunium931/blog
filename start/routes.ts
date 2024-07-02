@@ -13,7 +13,7 @@ import { middleware } from '#start/kernel'
 const AuthController = () => import('#controllers/auth_controller')
 const UsersController = () => import('#controllers/users_controller')
 
-router.on('/').render('pages/home').as('home').use(middleware.auth())
+router.on('/').render('pages/home').as('home')
 
 router
   .group(() => {
