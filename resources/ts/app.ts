@@ -1,5 +1,4 @@
-console.log('Hello World')
-import 'unpoly'
+import { up } from 'unpoly'
 import 'unpoly/unpoly.css'
 
 // Follows all links by default
