@@ -8,5 +8,6 @@
 */
 
 import router from '@adonisjs/core/services/router'
+import rootsController from '#controllers/roots_controller'
 
-router.on('/').render('pages/home')
+router.get('/', [rootsController, 'show'])

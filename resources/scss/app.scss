@@ -7,8 +7,22 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: #333;
 }
 
-.test {
-  color: red;
+nav {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #fff;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      margin: 10px;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
 }

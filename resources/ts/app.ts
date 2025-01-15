@@ -1,7 +1,7 @@
-console.log('Hello World')
 import Alpine from 'alpinejs'
+import 'unpoly'
+import 'unpoly/unpoly.css'
 
 Alpine.start()
 
-import 'unpoly'
 up.link.config.preloadSelectors.push('a[href]')
