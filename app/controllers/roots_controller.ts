@@ -4,5 +4,4 @@ export default class RootsController {
   async show({ view }: HttpContext) {
     return view.render('pages/root')
   }
-
 }
